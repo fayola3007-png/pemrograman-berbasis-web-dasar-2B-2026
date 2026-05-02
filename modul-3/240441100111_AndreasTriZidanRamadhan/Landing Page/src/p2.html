@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juara - Cita Rasa Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, .font-serif { font-family: 'Playfair+Display', serif; }
+        
+        .bg-juara { background-color: #4a2c2a; } /* Cokelat Tua */
+        .text-juara-gold { color: #d4a373; } /* Emas/Krim */
+    </style>
+</head>
+<body class="bg-[#fdf8f1] text-[#2c1b18]">
+
+    <div id="age-gate" class="fixed inset-0 z-100 bg-black flex items-center justify-center px-6">
+        <div class="bg-[#4a2c2a] p-10 rounded-lg text-center max-w-md border border-[#d4a373]">
+            <h2 class="text-white text-2xl font-bold mb-4">ANDA SUDAH BERUSIA 18+?</h2>
+            <p class="text-gray-300 mb-8 text-sm">Situs ini hanya ditujukan untuk orang dewasa berusia 18 tahun ke atas. Mohon konfirmasi usia Anda.</p>
+            <div class="flex gap-4 justify-center">
+                <button onclick="document.getElementById('age-gate').style.display='none'" class="bg-[#d4a373] text-white px-8 py-2 rounded font-bold hover:bg-[#bc8a5f]">YA</button>
+                <a href="https://www.google.com" class="border border-white text-white px-8 py-2 rounded font-bold hover:bg-white hover:text-black">TIDAK</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 bg-[#4a2c2a]/95 backdrop-blur-sm border-b border-[#d4a373]/30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-[#d4a373] tracking-widest">JUARA</div>
+            <div class="hidden md:flex space-x-8 text-white text-sm font-light tracking-widest">
+                <a href="#hero" class="hover:text-[#d4a373] transition">BERANDA</a>
+                <a href="#produk" class="hover:text-[#d4a373] transition">PRODUK</a>
+                <a href="#warisan" class="hover:text-[#d4a373] transition">WARISAN</a>
+                <a href="#kontak" class="hover:text-[#d4a373] transition">KONTAK</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1550985543-f47f38aee65e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Background">
+        
+        <div class="relative z-20 text-center px-6">
+            <h1 class="text-5xl md:text-7xl text-white font-bold mb-4">Cita Rasa <span class="text-[#d4a373]">Juara</span></h1>
+            <p class="text-white text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide italic">"Kualitas yang melegenda, kebanggaan Nusantara."</p>
+            <div class="mt-10">
+                <a href="#produk" class="bg-[#d4a373] text-white px-10 py-3 rounded-sm font-semibold tracking-widest hover:bg-[#bc8a5f] transition">LIHAT PRODUK</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-16 italic">Varian Unggulan</h2>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="group cursor-pointer">
+                    <div class="bg-[#fdf8f1] p-10 border border-gray-100 group-hover:border-[#d4a373] transition duration-500">
+                        <div class="h-64 flex items-center justify-center mb-6">
+                            <i class="fas fa-box-open text-6xl text-juara-gold opacity-50"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter">Juara Teh Manis</h3>
+                        <p class="text-gray-500 text-sm">Aroma teh manis yang otentik dan menenangkan di setiap tarikan.</p>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="bg-[#fdf8f1] p-10 border border-gray-100 group-hover:border-[#d4a373] transition duration-500">
+                        <div class="h-64 flex items-center justify-center mb-6">
+                            <i class="fas fa-box-open text-6xl text-juara-gold opacity-50"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter">Juara Kopi Melati</h3>
+                        <p class="text-gray-500 text-sm">Perpaduan kopi mantap dengan keharuman bunga melati pilihan.</p>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="bg-[#fdf8f1] p-10 border border-gray-100 group-hover:border-[#d4a373] transition duration-500">
+                        <div class="h-64 flex items-center justify-center mb-6">
+                            <i class="fas fa-box-open text-6xl text-juara-gold opacity-50"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-tighter">Juara Filter Classic</h3>
+                        <p class="text-gray-500 text-sm">Rasa tembakau murni yang kuat bagi pecinta kretek sejati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="warisan" class="py-24 bg-[#4a2c2a] text-white">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 text-[#d4a373]">Dedikasi Untuk Rasa</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Sejak awal, Juara berkomitmen menghadirkan racikan tembakau terbaik yang dipadukan dengan cengkeh pilihan Nusantara. Kami menjaga tradisi pengolahan yang teliti untuk memastikan setiap batang adalah sebuah mahakarya.
+                </p>
+                <p class="text-gray-300 leading-relaxed italic border-l-4 border-[#d4a373] pl-6">
+                    "Bukan sekadar asap, tapi cerita tentang tanah air."
+                </p>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <div class="h-64 bg-white/5 rounded-lg border border-white/10 flex items-center justify-center">
+                    <span class="text-xs text-[#d4a373]">KUALITAS TERJAMIN</span>
+                </div>
+                <div class="h-64 bg-white/5 rounded-lg border border-white/10 flex items-center justify-center">
+                    <span class="text-xs text-[#d4a373]">TEMBAKAU PILIHAN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-black text-white pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <div class="text-3xl font-serif text-[#d4a373] mb-10 tracking-widest uppercase">Juara</div>
+            
+            <div class="bg-white text-black p-4 text-center w-full max-w-3xl mb-12 border-4 border-gray-600 uppercase font-bold text-lg">
+                PERINGATAN: MEROKOK MEMBUNUHMU
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full text-sm text-gray-400 mb-16">
+                <div>
+                    <h4 class="text-white font-bold mb-4">NAVIGASI</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
+                        <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">HUBUNGI KAMI</h4>
+                    <p>Jl. Industri Tembakau No. 12</p>
+                    <p>Jawa Tengah, Indonesia</p>
+                </div>
+                <div class="col-span-2 text-right">
+                    <h4 class="text-white font-bold mb-4">IKUTI KAMI</h4>
+                    <div class="flex justify-end space-x-6 text-xl">
+                        <i class="fab fa-instagram hover:text-[#d4a373] cursor-pointer"></i>
+                        <i class="fab fa-facebook hover:text-[#d4a373] cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-xs text-gray-600 border-t border-gray-800 w-full pt-8 text-center">
+                &copy; 2026 PT Juara Nusantara. Khusus 18+. Merokok dapat menyebabkan kanker, penyakit jantung, impotensi dan gangguan kehamilan dan janin.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

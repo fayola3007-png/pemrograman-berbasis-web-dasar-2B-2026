@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-blue-600">Zidan.dev</span>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skill</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Proyek</a>
+                <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">   
+                <h2 class="text-blue-600 font-semibold mb-2">Halo, saya</h2>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Andreas Tri Zidan Ramadhan</h1>
+                <p class="text-lg text-slate-600 mb-6 max-w-lg">
+                    Mahasiswa Sistem Informasi yang berfokus pada pengembangan web dan Sistem Pendukung Keputusan. Senang membangun solusi digital yang efisien dan estetis.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-full font-medium hover:shadow-lg transition">Lihat Proyek</a>
+                    <a href="#about" class="px-6 py-3 border border-slate-300 rounded-full font-medium hover:bg-slate-100 transition">Tentang Saya</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-100 rounded-full overflow-hidden border-8 border-white shadow-xl">
+                    <img src="./img/foto formal.jpeg " alt="Foto Profil" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-2"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 italic">Pendidikan & Organisasi</h3>
+                    <ul class="space-y-4">
+                        <li class="border-l-4 border-blue-600 pl-4">
+                            <h4 class="font-bold">Sistem Informasi</h4>
+                            <p class="text-sm text-slate-500">Universitas Trunojoyo Madura</p>
+                        </li>
+                        <li class="border-l-4 border-slate-200 pl-4">
+                            <h4 class="font-bold">IKAMALA (Ikatan Keluarga Mahasiswa Lamongan)</h4>
+                            <p class="text-sm text-slate-500">Anggota Divisi POSDM</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Minat</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Selain coding, saya memiliki ketertarikan besar pada literatur fiksi, khususnya karya-karya dari Tere Liye. Di waktu luang, saya sering menghabiskan waktu dengan memancing untuk menyegarkan pikiran.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Keahlian</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <i class="fa-brands fa-html5 text-orange-500 text-4xl mb-3"></i>
+                    <h4 class="font-bold">HTML & CSS</h4>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-code text-blue-500 text-4xl mb-3"></i>
+                    <h4 class="font-bold">Flask & Jinja2</h4>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-chart-line text-green-500 text-4xl mb-3"></i>
+                    <h4 class="font-bold">SPK (SAW/TOPSIS)</h4>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <i class="fa-brands fa-python text-yellow-500 text-4xl mb-3"></i>
+                    <h4 class="font-bold">Python</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Proyek Terbaru</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-blue-200 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">KopiBoy Web Design</h4>
+                        <p class="text-sm text-slate-600 mb-4">Implementasi desain layout modern menggunakan CSS Flexbox dan Grid.</p>
+                        <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-600 rounded">CSS Grid</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-green-200 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Sistem Keputusan SAW</h4>
+                        <p class="text-sm text-slate-600 mb-4">Aplikasi perhitungan kriteria menggunakan metode Simple Additive Weighting.</p>
+                        <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-600 rounded">Python / Flask</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-purple-200 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Book Collection</h4>
+                        <p class="text-sm text-slate-600 mb-4">Katalog buku digital untuk manajemen koleksi buku pribadi.</p>
+                        <span class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-600 rounded">Jinja2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white py-12 px-4 border-t border-slate-200 text-center">
+        <h2 class="text-2xl font-bold mb-6">Ayo Terhubung!</h2>
+        <div class="flex justify-center gap-6 mb-8 text-2xl">
+            <a href="#" class="text-slate-400 hover:text-blue-600 transition"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="text-slate-400 hover:text-blue-600 transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="text-slate-500 text-sm">&copy; 2026 Andreas Tri Zidan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
