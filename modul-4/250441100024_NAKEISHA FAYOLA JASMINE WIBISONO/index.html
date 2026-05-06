@@ -623,4 +623,631 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #F9FAFF;
+            color: #2D2D2D;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+        }
+
+        .text-primary {
+            color: #8A38F5 !important;
+        }
+
+        .btn-signup {
+            background-color: #FF6B6B;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .btn-signup:hover {
+            background-color: #ff5252;
+        }
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .btn-warning {
+            background-color: #FF9F43;
+            border: none;
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background-color: #ff8c1a;
+        }
+
+        .btn-primary {
+            background-color: #8A38F5;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #574fd6;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-service {
+            background-color: #8A38F5;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .btn-service:hover {
+            background-color: #574fd6;
+        }
+
+        /* DARK MODE */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        .dark-mode .card {
+            background-color: #1e1e1e;
+        }
+
+        .dark-mode .navbar {
+            background-color: #1e1e1e !important;
+        }
+
+        .bg-orange {
+            background-color: #FFD580;
+        }
+
+        .header-box {
+            max-width: 850px;
+            margin: auto;
+            border-radius: 12px;
+            padding: 30px 20px;
+        }
+
+        .header-box p {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .service-card {
+            position: relative;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .icon {
+
+            width: 50px;
+            height: 50px;
+            background-color: #FF9F43;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            margin-left: 0;
+        }
+
+        .icon img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .cta-box {
+            background: linear-gradient(90deg, #FF9335, #FF9335);
+            margin-bottom: -60px;
+        }
+
+        .cta-section {
+            z-index: 2;
+        }
+
+        .footer {
+            background: #FFD47E;
+            padding-top: 100px;
+        }
+
+        /* DARK MODE */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        body.dark-mode .navbar {
+            background-color: #1e1e1e !important;
+            border-color: #333 !important;
+        }
+
+        body.dark-mode .nav-link,
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode h4,
+        body.dark-mode h5,
+        body.dark-mode h6,
+        body.dark-mode p,
+        body.dark-mode span {
+            color: white !important;
+        }
+
+        body.dark-mode .card,
+        body.dark-mode .modal-content {
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        body.dark-mode .form-control {
+            background-color: #2b2b2b;
+            border: 1px solid #444;
+            color: white;
+        }
+
+        body.dark-mode .form-control::placeholder {
+            color: #bbb;
+        }
+
+        body.dark-mode .bg-light {
+            background-color: #1a1a1a !important;
+        }
+
+        body.dark-mode .footer {
+            background-color: #1e1e1e;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="Home" class="navbar navbar-expand-lg bg-white py-3 border-bottom">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                <img src="UTS/logo.png" width="50" alt="">
+                <span class="fw-bold fs-2 text-primary">
+                    BzMe
+                </span>
+            </a>
+
+            <!-- TOGGLER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+
+                <ul class="navbar-nav gap-lg-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-semibold fs-5" href="#Home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-semibold fs-5" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-semibold fs-5" href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-semibold fs-5" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-semibold fs-5" href="#blog">
+                            Blog
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- RIGHT BUTTON -->
+            <div class="d-flex align-items-center gap-3">
+
+                <!-- SIGN UP BUTTON -->
+                <button class="btn btn-warning px-4 py-2 rounded-4 fw-semibold" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">
+                    Sign Up
+                </button>
+
+                <!-- DARK MODE BUTTON -->
+                <button class="btn btn-dark rounded-4 px-3" id="themeToggle">
+                    Dark Mode
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MODAL SIGN UP -->
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0 rounded-4 p-3">
+
+                <!-- HEADER -->
+                <div class="modal-header border-0">
+                    <h2 class="fw-bold">Sign Up</h2>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <!-- BODY -->
+                <div class="modal-body">
+
+                    <form id="signupForm">
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control py-3 rounded-3" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control py-3 rounded-3" id="name" placeholder="Name">
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="password" class="form-control py-3 rounded-3" id="password"
+                                placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-3 rounded-3 fw-semibold">
+                            Submit
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>We Create <span class="text-primary">Solutions</span> For Your Business</h1>
+                    <h5 class="text-muted fw-bold">We provide intelligent technology solutions to
+                        optimize efficiency and accelerate the growth of your business operations.</h5>
+                    <button class="btn btn-warning">Get Started</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="UTS/1.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-padding text-center">
+        <div class="container">
+
+            <!-- HEADER DALAM BOX -->
+            <div class="header-box mb-5">
+                <h1 class="fw-bold mb-3">
+                    We Provide The Best <span class="text-primary">Services</span>
+                </h1>
+
+                <p class="text-muted">
+                    We deliver high-quality technology services specifically designed to enhance your
+                    business productivity and scalability in a sustainable way.
+                </p>
+            </div>
+
+            <!-- CARD -->
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm service-card h-100">
+                        <div class="icon">
+                            <img src="UTS/icon1.png" alt="icon1">
+                        </div>
+                        <h4 class="text-start fw-bold">Seo/Sem</h4>
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                            sit amet consectetur adipiscing elit quisque faucibus.</p>
+                        <button class="btn btn-service btn-sm mt-2">Click Here</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm service-card h-100">
+                        <div class="icon">
+                            <img src="UTS/icon1.png" alt="icon1">
+                        </div>
+                        <h4 class="text-start fw-bold">Viral Campaign</h4>
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit
+                            amet consectetur adipiscing elit quisque faucibus.</p>
+                        <button class="btn btn-service btn-sm mt-2">Click Here</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm service-card h-100">
+                        <div class="icon">
+                            <img src="UTS/icon2.png" alt="icon1">
+                        </div>
+                        <h4 class="text-start fw-bold">Marketing</h4>
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit
+                            amet consectetur adipiscing elit quisque faucibus.</p>
+                        <button class="btn btn-service btn-sm mt-2">Click Here</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm service-card h-100">
+                        <div class="icon">
+                            <img src="UTS/icon3.png" alt="icon1">
+                        </div>
+                        <h4 class="text-start fw-bold">Others</h4>
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit
+                            amet consectetur adipiscing elit quisque faucibus.</p>
+                        <button class="btn btn-service btn-sm mt-2">Click Here</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMPLE SOLUTION -->
+    <section class="section-padding bg-orange">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="UTS/2.png" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Simple <span class="text-primary">Solutions!</span></h2>
+                    <h3 class="fw-bold">We understand that no two are alike. That’s why we take the time to truly
+                        understand your unique goals, challenges, and vision.
+                    </h3>
+                    <button class="btn btn-warning">Get Started</button>
+                    <button class="btn btn-outline-secondary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENCY -->
+    <section id="blog" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Our <span class="text-primary">Agency</span></h1>
+                    <h3 class="fw-bold">We believe in the power of data. Our analytics-driven approach allows us to make
+                        informed Let's turn your data into actionable insights adored Solutions for Your Business</h3>
+                    <button class="btn btn-warning">Read More</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="UTS/3.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="header-box mb-5">
+                <h2>What <span class="text-warning">Clients</span> Say!</h2>
+                <h3 class="text-muted fw-bold">See How Our Digital Marketing Agency Helped Clients Achieve Their Goals
+                </h3>
+            </div>
+
+            <div class="row mt-5">
+                <!-- CARD 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow p-4 rounded-4">
+                        <h5 class="text-warning fw-bold">Johnny Suh</h5>
+                        <small class="text-start text-muted">Executive CEO</small>
+                        <p class="mt-3 text-muted text-start">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed
+                            purus ut
+                        </p>
+                        <div class="d-flex start-content-center gap-1 mt-2">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 1.png" width="18">
+                            <img src="UTS/star 1.png" width="18">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow p-4 rounded-4">
+                        <h5 class="text-start text-warning fw-bold">Nashley Juan</h5>
+                        <small class="text-start text-muted">Executive CEO</small>
+                        <p class="mt-3 text-muted text-start">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Maecenas metus urna, vehicula sed purus ut
+                        </p>
+                        <div class="d-flex start-content-center gap-1 mt-2">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 1.png" width="18">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow p-4 rounded-4">
+                        <h5 class="text-start text-warning fw-bold">Mark Z.</h5>
+                        <small class="text-start text-muted">Executive CEO</small>
+                        <p class="mt-3 text-muted text-start">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed
+                            purus ut
+                        </p>
+                        <div class="d-flex start-content-center gap-1 mt-2">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                            <img src="UTS/star 2.png" width="18">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION (INI PENGGANTI CONTACT FORM) -->
+    <section class="py-5 position-relative cta-section">
+        <div class="container">
+            <div id="contact" class="d-flex justify-content-between align-items-center p-4 rounded-4 shadow cta-box">
+
+                <h4 class="text-white m-0">Ready To Get Started?</h4>
+
+                <a href="https://wa.me/6282131344151" target="_blank" class="btn btn-outline-light px-4">
+                    Contact Us
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-4 mb-3">
+                    <img src="UTS/logo.png" width="35">
+                    <span class="fw-bold text-primary justify-content">BzMe</span>
+                </div>
+
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold">Company</h6>
+                    <p>About</p>
+                    <p>Contact</p>
+                    <p>Careers</p>
+                    <p>Team</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Designs</h6>
+                    <p>Find a Designer</p>
+                    <p>Discover Inspiration</p>
+                    <p>Pricing</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Support</h6>
+                    <p>Privacy Policy</p>
+                    <p>Terms</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("signupForm")
+            .addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                let email = document.getElementById("email").value.trim();
+                let name = document.getElementById("name").value.trim();
+                let password = document.getElementById("password").value.trim();
+
+                if (email === "" || name === "" || password === "") {
+                    alert("Semua field harus diisi!");
+                    return;
+                }
+
+                if (!email.includes("@")) {
+                    alert("Email tidak valid!");
+                    return;
+                }
+
+                if (password.length < 6) {
+                    alert("Password minimal 6 karakter!");
+                    return;
+                }
+
+                alert("Sign Up Berhasil!");
+            });
+    </script>
+    <script>
+        // DARK MODE
+        const themeToggle = document.getElementById("themeToggle");
+
+        themeToggle.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+
+                themeToggle.innerText = "Light Mode";
+
+                themeToggle.classList.remove("btn-dark");
+                themeToggle.classList.add("btn-light");
+
+            } else {
+
+                themeToggle.innerText = "Dark Mode";
+
+                themeToggle.classList.remove("btn-light");
+                themeToggle.classList.add("btn-dark");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+>>>>>>> 800239bfd0404ee1bb8c6ac668df7ea4a1209d13
 </html>
